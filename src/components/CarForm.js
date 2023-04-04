@@ -1,37 +1,33 @@
 import { useDispatch, useSelector } from "react-redux";
-import { changeName, changeCost, addCar} from "../store";
+import { changeName, changeCost, addCar } from "../store";
 
 function CarForm() {
   const dispatch = useDispatch();
-  const {name, cost} = useSelector((state) => {
+  const { name, cost } = useSelector((state) => {
     return {
       name: state.form.name,
-      cost: state.form.cost
-    }
+      cost: state.form.cost,
+    };
   });
 
   const handleNameChange = (event) => {
     dispatch(changeName(event.target.value));
   };
-
   const handleCostChange = (event) => {
-    dispatch(changeCost(event.target.value));
+    const carCost = parseInt(event.target.value) || 0;
+    dispatch(changeCost(carCost));
   };
-
   const handleSubmit = (event) => {
     event.preventDefault();
-    dispatch(addCar({
-      name,
-      cost
-    }))
-  }
+
+    dispatch(addCar({ name, cost }));
+  };
 
   return (
     <div className="car-form panel">
       <h4 className="subtitle is-3">Add Car</h4>
       <form onSubmit={handleSubmit}>
         <div className="field-group">
-          {/* Name */}
           <div className="field">
             <label className="label">Name</label>
             <input
@@ -40,21 +36,19 @@ function CarForm() {
               onChange={handleNameChange}
             />
           </div>
-          {/* Cost */}
+
           <div className="field">
             <label className="label">Cost</label>
             <input
               className="input is-expanded"
               value={cost || ""}
-              type="number"
               onChange={handleCostChange}
+              type="number"
             />
           </div>
         </div>
-        <div>
-          <button className="button is-link" onClick={handleSubmit}>
-            Submit
-          </button>
+        <div className="field">
+          <button className="button is-link">Submit</button>
         </div>
       </form>
     </div>
