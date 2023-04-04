@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kuldeepperumalla/cars-log-redux/static/css/main.2a2e4678.css",
+    "main.js": "/kuldeepperumalla/cars-log-redux/static/js/main.ef239be4.js",
+    "index.html": "/kuldeepperumalla/cars-log-redux/index.html",
+    "main.2a2e4678.css.map": "/kuldeepperumalla/cars-log-redux/static/css/main.2a2e4678.css.map",
+    "main.ef239be4.js.map": "/kuldeepperumalla/cars-log-redux/static/js/main.ef239be4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a2e4678.css",
+    "static/js/main.ef239be4.js"
+  ]
+}
