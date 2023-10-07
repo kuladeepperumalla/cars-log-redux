@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Photo Albums App  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A simple demonstration of my knowledge on reusable components like Accordions, Buttons, Panel, Thunks and many more using JSON server as back end and tailwind CSS for UI and ClassNames library for more customization of classnames and facker.JS for User data, album names and loremflicker for random images generated in the album.
 
-## Available Scripts
+<img src="./public/images/mainscreen.png">
 
-In the project directory, you can run:
+This project is part of my proof of concept on React Redux, Reusable components, RESTful API, JSON server, DOM manipulation, Hooks, Slices and Thunks. Live demonstration of the application is deployed on Render, Please click here -> [Demo](s://kuladeepperumalla.github.io/Gaming-world---online-game-shop/) (Note: Due to the free hosting service, server loads after a minute! Thanks for your patience! <3 )
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Introduction](#introduction)
+- [Features](#features)
+- [API reference](#API-reference)
+- [Build Process](#build-process)
+- [Developer](#Developer)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Introduction
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> Photo Albums App generates random users and users can add any number of photos generated from the API. (This App is built for POC purpose only)
+- This is a single page web application where all the data is fetched and requests are made to API without reloding the page by using proide and invalidating tags.
+- Used accordions to expand the data on click and add photos inside the expandable pannels
+- Users, Albums, Photos can be Added and Deleted
+- isLoading and isError used all accross the application to handle exceptions in case of bad server or 404 responses from the API
+- Look into [features](#Features) for code snippets and more understanding.  
+<img src="./public/images/intro.gif">
+****
 
-### `npm run eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+> A few of the things you can do with Gaming world:
+> - Add/Delete Users by clicking button
+> - Add/Delete albums
+> - Add/Delete phhotos
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+****
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## 💻 Run Locally
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Clone the project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  git clone s://github.com/kuladeepperumalla/photo-albums-app.git
+```
 
-### Code Splitting
+Go to the project directory
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+  cd photo-albums-app
+```
 
-### Analyzing the Bundle Size
+Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+  npm install
+```
 
-### Making a Progressive Web App
+Start the backend server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+  npm run start:server
+```
+Start the front end server
 
-### Advanced Configuration
+```bash
+  npm run start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![JSON](https://img.shields.io/badge/JSON-gray?style=for-the-badge&logo=json&logoColor=yellow)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Developer
+
+This project is brought to you by  [Kuladeep Perumalla](s://github.
